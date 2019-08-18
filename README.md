@@ -10,6 +10,11 @@
 
 	Todo o sistema foi implementado em linguagem C#, gerando, assim, um arquivo executável para Windows e Linux(utilizando o compilador Mono e executando com o comando "mono executavel.exe")
 	
-	A pasta "Requirements" contém toda a documentação do projeto (Requisitos, desenhos de classe, desenhos originais das telas, planilhas originais utilizadas, cronograma de atvidades);
-	A pasta "System_Files" contém os arquivos de entrada (planilhas .xls e .csv) e os de saída (formulário .pdf, arquivo de banco de dados) do sistema;
-	A pasta "Solutions" contém todas as soluções utilizadas na implementação do sistema.
+	A pasta "Documentation" contém toda a documentação do projeto (Requisitos, desenhos de classe, desenhos originais das telas, planilhas originais utilizadas, cronograma de atvidades);
+	A pasta "var" contém os arquivos modificados no decorrer do processamento (entradas de planilhas, formulários, banco de dados de itens e de emprestantes);
+	A pasta "tmp" contém os arquivos temporários utilizados no sistema (as planilhas de entrada são armazenadas aqui enquanto o sistema as processa e salva os dados dentro do banco, é uma pasta volátil, ou seja, os itenas são eliminados quando o sistema é fechado).
+	A pasta "root" contém os arquivos que só os administradores têm acesso (banco de dados de funcionários e de administradores);
+	A pasta "opt" contém os arquivos gerados pelo sistema (formulário .pdf, arquivo de banco de dados);
+	A pasta "sys" contém todas as soluções utilizadas na implementação do sistema;
+	A pasta "bin" contém o arquivo executável do sistema.
+	
