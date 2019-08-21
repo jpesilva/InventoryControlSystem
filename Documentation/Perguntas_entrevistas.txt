@@ -1,0 +1,9 @@
+PERGUNTAS DA ENTREVISTA COM O CLIENTE
+
+1. Como estão sendo registrados os empréstimos?
+2. O que acontece se vocês não encontrarem um item que não está registrado como empréstimo?
+3. Vocês ligam para o cliente que está em atraso?
+4. Existe algum tipo de backup dos dados?
+5. Vocês já utilizaram outro sistema antes?
+6. Vocês preferem registrar os dados apenas no sistema ou preferem ter uma planilha em Excel ou csv?
+7. 
