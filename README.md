@@ -50,6 +50,10 @@
 ### Finalização
 
 ## Agradecimentos
+	Aos Professores Juliana Forin Pasquini Martinez (Engenharia de Software), Claudio Etelvino de Lima (Sistemas de Informação)
+	 e Ana Cecilia Rodrigues Medeiros (Comunicação e Expressão), pelo auxílio no desenvolvimento do projeto.
+	Ao professor Cícero pela elaboração do projeto e apresentação das necessidades.
+	Aos desenvolvedores pelo empenho no desenvolvimento e estudo da linguagem.
 
 
 	
