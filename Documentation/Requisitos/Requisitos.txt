@@ -1,0 +1,51 @@
+15-08
+
+SITE DO GRUPO:
+	sites.google.com/view/excellentes
+
+ORGANIZAÇÃO E SEPARAÇÃO DO GRUPO FOR FUNÇÃO
+
+	REQUISITOS:
+		- Gerar um Formulário de empréstimo (em PDF, após o empréstimo estar concluído):
+			- data de empréstimo;
+			- data de devolução;
+			- dados do emprestante;
+			- Dados do objeto em empréstimo:
+				-Quantidade, Nº do Patrimonio, Descrição, Localização,
+				 Nº da Nota Fiscal, Data de Aquisição, Fornecedor,
+				 Valor R$, Grau de Depreciação.
+			- assinatura do responsável;
+			- dados da empresa.
+
+		- Cadastro do tipo de usuário:
+			- Admin:
+				- Íntegra de todos os dados;
+				- Todos os Funcionários;
+				- criar conta de funcionário.
+			- Funcionário:
+				- cadastro de emprestante;
+				- empréstimo;
+				- inserção de item.
+		ACESSOS:
+
+			-FUNCIONÁRIO
+				- FUNCIONÁRIO Cadastro de emprestante:
+					- Nome, CPF, telefone, e-mail, endereços (rua, cidade, estado, CEP).
+				- FUNCIONÁRIO Cadastro de item:
+					- Quantidade, Nº do Patrimonio, Descrição, Localização,
+					  Nº da Nota Fiscal, Data de Aquisição, Fornecedor,
+				  	  Valor R$, Grau de Depreciação.
+			-ADMIN	
+				- ADMIN Cadastro de Funcionário:
+					- Nome, CPF, data de nascimento, telefone, e-mail, endereços (rua, cidade, estado, CEP);
+					- Senha.
+				- ADMIN Cadastro de Administrador:
+					- Nome, CPF, data de nascimento, telefone, e-mail, endereços (rua, cidade, estado, CEP);
+					- Senha.
+
+		/** Se o usuário esquecer a senha:
+		  *	- Envia a senha antiga no e-mail cadastrado.
+		  * Criptografia simples de senhas;
+		  * opção de mudar a senha;
+		  *	- coloca a senha no programa e ao confirmar, chama o md5 e então salva no banco.
+		*/
