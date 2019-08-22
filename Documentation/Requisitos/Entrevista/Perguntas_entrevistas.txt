@@ -6,4 +6,3 @@ PERGUNTAS DA ENTREVISTA COM O CLIENTE
 4. Existe algum tipo de backup dos dados?
 5. Vocês já utilizaram outro sistema antes?
 6. Vocês preferem registrar os dados apenas no sistema ou preferem ter uma planilha em Excel ou csv?
-7. 

@@ -1,23 +1,36 @@
 15-08
 
-SITE DO GRUPO:
-	sites.google.com/view/excellentes
+Detalhes dos Requisitos
+	- Descrição
+	- Entrada
+	- Origem
+	- Saídas
+	- Destino
+	- Ação
+	- Requer
 
-ORGANIZAÇÃO E SEPARAÇÃO DO GRUPO FOR FUNÇÃO
+REQUISITOS:
+	FUNCIONAIS
+		RQ_FUNC01 :: Gerar um Formulário de empréstimo (em PDF, após o empréstimo estar concluído)
+			Descrição: Um formulário como comprovante de empréstimo, gerado em tempo real pelo programa, onde deverá conter:
+				- data de empréstimo;
+				- data de devolução;
+				- dados do emprestante;
+				- Dados do objeto em empréstimo:
+					-Quantidade, Nº do Patrimonio, Descrição, Localização,
+					 Nº da Nota Fiscal, Data de Aquisição, Fornecedor,
+					 Valor R$, Grau de Depreciação.
+				- assinatura do responsável;
+				- dados da empresa.
+			Entrada: Poderá ser solicitado logo após a finalização ou ao acessar as tabelas de empréstimos realizados, com uma opção de 					 gerar formulário.
+			Origem: 
+			Saídas:
+			Destino:
+			Ação:
+			Requer:
 
-	REQUISITOS:
-		- Gerar um Formulário de empréstimo (em PDF, após o empréstimo estar concluído):
-			- data de empréstimo;
-			- data de devolução;
-			- dados do emprestante;
-			- Dados do objeto em empréstimo:
-				-Quantidade, Nº do Patrimonio, Descrição, Localização,
-				 Nº da Nota Fiscal, Data de Aquisição, Fornecedor,
-				 Valor R$, Grau de Depreciação.
-			- assinatura do responsável;
-			- dados da empresa.
-
-		- Cadastro do tipo de usuário:
+		REQ_FUNC02 :: Cadastro do tipo de usuário:
+			
 			- Admin:
 				- Íntegra de todos os dados;
 				- Todos os Funcionários;
@@ -26,7 +39,14 @@ ORGANIZAÇÃO E SEPARAÇÃO DO GRUPO FOR FUNÇÃO
 				- cadastro de emprestante;
 				- empréstimo;
 				- inserção de item.
-		ACESSOS:
+		- Sistema necessáriamente precisa ser Windows, devido ao uso de uma biblioteca do sistema, não funcionando no Linux.
+		 COM RELAÇÃO A INTERFACE:
+			- Visualização das tabelas do banco de dados;
+			- Opção de abrir um arquivo (.xls e .csv serão suportados), no qual o sistema fara uma leitura dos dados na planilha e 				  inserí-los no Banco de Dados, lidando com dados incosistentes e duplicados e gerenciando as quantidades dos itens, mantendo 				  uma organização e separação de dados individuais (nota Fiscal, Fornecedor, Nº do Patrimonio, data de aquisição etc.). Tal 				  planilha será armazenada em cópia dentro da pasta "tmp", por motivos de backup e evitar a perda de dados no arquivo 				  original, no qual o sistema irá fazer a leitura por meio desta planilha e não da original;
+			- O sistema não fará alterações na planilha aberta no programa, apenas no arquivo DB local;
+			- Opção de Salvamento, onde o sistema irá salvar os dados no Banco, mantendo a planilha aberta inalterada;
+			- Opção de Gerar um Formulário em PDF (podendo ser impresso), essa opção deve ser mostrada ao realizar um empréstimo e ao 				  acessar o Banco de Dados de Empréstimos, deverá ter a opção de gerar um formulário (será feito em tempo real, não será 				  armazenado no sistema, para diminuir o espaço);
+		NÍVEIS DE ACESSO:
 
 			-FUNCIONÁRIO
 				- FUNCIONÁRIO Cadastro de emprestante:
@@ -42,10 +62,16 @@ ORGANIZAÇÃO E SEPARAÇÃO DO GRUPO FOR FUNÇÃO
 				- ADMIN Cadastro de Administrador:
 					- Nome, CPF, data de nascimento, telefone, e-mail, endereços (rua, cidade, estado, CEP);
 					- Senha.
-
+				- Banco de Dados:
+					- Cópia do arquivo .db;
+					- Arquivo principal do Banco de Dados.
 		/** Se o usuário esquecer a senha:
 		  *	- Envia a senha antiga no e-mail cadastrado.
 		  * Criptografia simples de senhas;
 		  * opção de mudar a senha;
 		  *	- coloca a senha no programa e ao confirmar, chama o md5 e então salva no banco.
 		*/
+	NÃO FUNCIONAIS
+		- Mensagens de erro devem ser escritas de forma clara, para que o usuário entenda perfeitamente onde ocorreu o erro e a possível 			solução.
+		- Segurança: 
+			- As senhas devem ser armazenadas em formato criptografado dentro do Banco de Dados;
