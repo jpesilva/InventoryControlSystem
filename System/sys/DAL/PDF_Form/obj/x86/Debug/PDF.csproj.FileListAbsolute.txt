@@ -104,3 +104,12 @@
 /home/tobias/Projects/Estudos_de_Projetos/PDF/obj/x86/Debug/PDF.csproj.CopyComplete
 /home/tobias/Projects/Estudos_de_Projetos/PDF/obj/x86/Debug/PDF.exe
 /home/tobias/Projects/Estudos_de_Projetos/PDF/obj/x86/Debug/PDF.pdb
+/home/tobias/Git/InventoryControlSystem/System/sys/DAL/PDF_Form/obj/x86/Debug/PDF.csprojAssemblyReference.cache
+/home/tobias/Git/InventoryControlSystem/System/sys/DAL/PDF_Form/obj/x86/Debug/PDF.csproj.CoreCompileInputs.cache
+/home/tobias/Git/InventoryControlSystem/System/sys/DAL/PDF_Form/obj/x86/Debug/PDF.exe
+/home/tobias/Git/InventoryControlSystem/System/sys/DAL/PDF_Form/obj/x86/Debug/PDF.pdb
+/home/tobias/Git/InventoryControlSystem/System/sys/DAL/PDF_Form/bin/Debug/PDF.exe
+/home/tobias/Git/InventoryControlSystem/System/sys/DAL/PDF_Form/bin/Debug/PDF.pdb
+/home/tobias/Git/InventoryControlSystem/System/sys/DAL/PDF_Form/bin/Debug/netstandard.dll
+/home/tobias/Git/InventoryControlSystem/System/sys/DAL/PDF_Form/bin/Debug/Test.It.pdb
+/home/tobias/Git/InventoryControlSystem/System/sys/DAL/PDF_Form/obj/x86/Debug/PDF.csproj.CopyComplete
