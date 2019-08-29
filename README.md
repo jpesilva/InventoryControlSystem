@@ -16,17 +16,17 @@
 		git: https://github.com/TobiasLino
 		e-mail: tobias.lino@fatec.sp.gov.br
 	Elieser de França Costa
-	git: https://github.com/eliaeser
-	e-mail: elieser.fc93@gmail.com
+		git: https://github.com/eliaeser
+		e-mail: elieser.fc93@gmail.com
 	Igor Sene Idalgo
-	git: https://github.com/IgorS12
-	e-mail: igoridalgo@gmail.com			
+		git: https://github.com/IgorS12
+		e-mail: igoridalgo@gmail.com			
 	João Victor Simão
-	git: https://github.com/Joao1512
-	e-mail: jvictorsimao@hotmail.com
+		git: https://github.com/Joao1512
+		e-mail: jvictorsimao@hotmail.com
 	João Pedro Esteves da Silva
-	git: https://github.com/jpesilva
-	e-mail: jp_edasilva@hotmail.com
+		git: https://github.com/jpesilva
+		e-mail: jp_edasilva@hotmail.com
 
 # Motivação
 
