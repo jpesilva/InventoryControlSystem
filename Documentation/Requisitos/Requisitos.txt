@@ -30,14 +30,18 @@ REQUISITOS:
 			Requer: Solicitação do usuário, então o sistema ira criar o formulário de imediato, inserindo seus valores.
 
 		REQ_FUNC02 :: Cadastro do tipo de usuário:
+			Descrição: Criação de duas classes distintas com o objetivo de utilização do sistema em diferentes níveis de acesso e autonomia, sendo eles:
 			- Admin:
-				- Íntegra de todos os dados;
+				- Controle e integração de todos os dados;
 				- Todos os Funcionários;
-				- criar conta de funcionário.
+				- criar conta de funcionário.				
 			- Funcionário:
 				- cadastro de emprestante;
 				- empréstimo;
 				- inserção de item.
+			Entrada: ID distinta(por categoria), login e senha para acesso ao sistema.
+			Origem: Acesso a todas as telas de cadastros e planilhas.
+			Saída: Contas de usuários com login e senha em diferentes níveis de acesso.
 		REQ_FUNC03 :: Arquivo de log
 			Descrição:
 			Entrada:
