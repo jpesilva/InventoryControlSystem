@@ -76,6 +76,8 @@
 
 # Conclusão do Projeto
 ### Detalhes do Cronograma
+	Maiores detalhes do cronograma podem ser visualizadas na pasta Cronograma dentro de Documents, corresponde a um arquivo de planilha em formato ods.
+	
 ### Finalização
 
 ## Agradecimentos
