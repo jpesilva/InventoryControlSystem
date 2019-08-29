@@ -16,17 +16,17 @@
 		git: https://github.com/TobiasLino
 		e-mail: tobias.lino@fatec.sp.gov.br
 	Elieser de França Costa
-		git: https://github.com/eliaeser
-		e-mail: 
+	git: https://github.com/eliaeser
+	e-mail: elieser.fc93@gmail.com
 	Igor Sene Idalgo
-		git: https://github.com/IgorS12
-		e-mail: 
+	git: https://github.com/IgorS12
+	e-mail: igoridalgo@gmail.com			
 	João Victor Simão
-		git: https://github.com/Joao1512
-		e-mail: 
+	git: https://github.com/Joao1512
+	e-mail: jvictorsimao@hotmail.com
 	João Pedro Esteves da Silva
-		git: https://github.com/jpesilva
-		e-mail: 
+	git: https://github.com/jpesilva
+	e-mail: jp_edasilva@hotmail.com
 
 # Motivação
 
@@ -42,7 +42,7 @@
 	 quinze dias após o empréstimo.  Quando o emprestante atrasava, o contato com este era dificultoso, na maioria dos casos porque os
 	 empréstimos eram armazenados de forma qualquer, sem organização e padronização.
 
-### Muitos papéis 
+### Excesso de papéis 
 	Como dito antes, os registros de itens e empréstimos eram realizados em pastas, gerando um arquivo grande de papéis, ao contrário do que poderia ser feito caso houvesse um controle com planilhas ou Banco de Dados.
 
 # Processamento
