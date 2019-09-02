@@ -1,8 +1,17 @@
 PERGUNTAS DA ENTREVISTA COM O CLIENTE
 
-1. Como estão sendo registrados os empréstimos?
-2. O que acontece se vocês não encontrarem um item que não está registrado como empréstimo?
-3. Vocês ligam para o cliente que está em atraso?
-4. Existe algum tipo de backup dos dados?
-5. Vocês já utilizaram outro sistema antes?
-6. Vocês preferem registrar os dados apenas no sistema ou preferem ter uma planilha em Excel ou csv?
+ATA da Entrevista
+02/09/2019
+Acréscimo
+    Doam fraldas 
+        Fraldas vencidas
+            Dados das fraldas, tamanho, quantidade (pesquisa vai ser pela data de validade);
+            Sem controle de fraldas;
+    Notificação de vencimentos direta no programa;
+    Quantidade de funcionários: 2 (atendente e assistente social);
+        Cada um com seu acesso individual (admin:assistente, funcionário:atendente);
+    O contato para itens vencidos é pelo telefone(tanto voz, quanto whatsapp);
+    MUDANÇA DE DIAS DE EMPRÉSTIMO, 30 DIAS NO TOTAL;
+    Avisos de itens sem informação;
+    Relatório de empréstimos mensais;
+    
