@@ -10,6 +10,7 @@
 ## Linguagem
 	Todo o sistema foi implementado em linguagem C#, gerando, assim, um arquivo executável para Windows(utilizando a
 	 biblioteca Windows Forms para gerar a interface gráfica).
+	O Banco de Dados, foi implementado em MySQL.
 
 ## Desenvolvedores:
 	Tobias da Silva Lino
