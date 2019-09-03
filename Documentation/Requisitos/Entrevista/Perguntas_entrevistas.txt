@@ -1,17 +1,27 @@
-PERGUNTAS DA ENTREVISTA COM O CLIENTE
-
-ATA da Entrevista
 02/09/2019
-Acréscimo
-    Doam fraldas 
-        Fraldas vencidas
-            Dados das fraldas, tamanho, quantidade (pesquisa vai ser pela data de validade);
-            Sem controle de fraldas;
-    Notificação de vencimentos direta no programa;
-    Quantidade de funcionários: 2 (atendente e assistente social);
-        Cada um com seu acesso individual (admin:assistente, funcionário:atendente);
-    O contato para itens vencidos é pelo telefone(tanto voz, quanto whatsapp);
-    MUDANÇA DE DIAS DE EMPRÉSTIMO, 30 DIAS NO TOTAL;
-    Avisos de itens sem informação;
-    Relatório de empréstimos mensais;
-    
+ATA DE ENTREVISTA PARA ELICITAÇÃO DE REQUISITOS.
+
+	Entrevista realizada no dia 02 de setembro de 2019 com o Professor Cícero Soares da Silva, responsável administrativo pela Obra Social Nossa Senhora de Fátima, às 9 horas e 25 minutos.
+	O objetivo da entrevista foi esclarecer para o professor o propósito do projeto, de modo que mantivesse plena consciência do desenvolvimento e das razões pela qual os desenvolvedores organizaram a solução.
+	
+	O professor iniciou a entrevista (visto que os desenvolvedores já possuiam conhecimento das razões pelo qual o desenvolvimento foi sugerido, junto com os principais requisitos do projeto) com a ADIÇÃO DE UMA NOVA FUNCIONALIDADE ao aplicativo, inclusão de um sistema de controle de estoque de fraldas doadas pela obra social, esse sistema seria necessário devido ao fato de que, como a obra social mantém um estoque de fraldas que não consegue doar, essas fraldas perdem a validade, sendo necessário seu descarte, porém a instituição tem dificuldades de separar as fraldas vencidas, já com o sistema seria possível ter uma visão mais ampla das fraldas que estejam vencidas e, assim, tomar a devida providência.
+	O sistema deverá conter dados das fraldas, tamanho(P, M, G), idade(criança, adulto), quantidade, data de validade etc. O usuário deverá ser informado sobre quais fraldas estarão vencendo em determinado mês, por meio de uma pesquisa de datas.
+	
+	PERGUNTA: De que forma os usuários deverão ser notificados sobre vencimentos de itens e empréstimos?
+	RESPOSTA: O usuário poderá receber uma notificação pelo próprio sistema, não sendo necessária uma notificação por e-mail ao usuário, conforme pensado anteriormente. 
+	
+	PERGUNTA: Quantos funcionários gerenciam os empréstimos de itens? Pensamos em dar níveis diferentes de acessos aos usuários, sendo os níveis de acesso de "Funcionário" e de "Administrador", o senhor concorda em utilizar esse sistema de controle?
+	RESPOSTA: Hoje, trabalham apenas duas pessoas, uma atendente e uma Assistente social. A atendente realiza os empréstimos, enquanto a Assistente social é a responsável pelos mesmos. Concordo, podem colocar a Assistente social com o nível de acesso de Administrador, pois é ela quem responde pelos empréstimos, já a atendente pode ter o acesso de Funcionário.
+
+	 A atendente é responsável por realizar os empréstimos, pegar dados dos clientes, verificar os vencimentos de empréstimos, entrar em contato com os clientes etc. Enquanto a Assistente social é responsável por acompanhar e responder pelos empréstimos.
+	O nível de acesso de Funcionário, é limitado a realizar operações de cadastro, adição e atualização de itens, acessar dados do cliente, gerar o comprovante de empréstimo, realizar o registro do empréstimo e acessar as planilhas atualizadas pelo programa. Quanto ao de Administrador, tem acesso a todas as operações do Funcionário junto com o acesso à íntegra dos dados gravados no Banco de Dados do sistema (arquivo com extensão de banco de dados .db).
+	
+	PERGUNTA: Quando um cliente atrasa a devolução de um item, o que a atendente faz com relação a isso?
+	RESPOSTA: Ela precisa entrar em contato com o cliente, por ligação ou até mesmo pelo WhattsApp, se o cliente desejar aumentar o período de empréstimo, ai ela troca a data de devolução e adiciona mais trinta dias no prazo. A PROPÓSITO, O PRAZO DE EMPRÉSTIMO FOI MODIFICADO, ANTERIORMENTE ERAM QUINZE DIAS, MAS ESSE PRAZO É MUITO CURTO, ENTÃO FORAM ADICIONADOS MAIS QUINZE DIAS, TOTALIZANDO 30 DIAS DE EMPRÉSTIMO. O recomendado é que, quando o cliente queira aumentar o prazo de seu empréstimo, ele ligue para a obra social com antecedência, então a atendente irá aumentar o prazo.
+
+	Ocorreram esclarecimentos acerca de: como o sistema irá tratar os itens que estejam com falta de informações, será feita uma busca dentro do banco de dados, assim, serão selecionados os itens que possuem células nulas, assim o usuário será alertado de que existem itens irregulares dentro do sistema e deverá tomar as devidas providências; como o sistema contabilizará os valores dos bens pertencentes à instituição, por meio de uma pesquisa dentro do banco de dados de itens em que o sistema irá somar os valores inseridos na coluna "ValorR$" dentro da tabela; como o sistema fará relatórios sobre os empréstimos e sobre itens doados mensalmente, serão gerados relatórios com informações de quantidade de itens recebidos, quantidade de empréstimos realizados, quais clientes fizeram mais empréstimos no mês e quais itens foram os mais emprestados.
+	
+	Devido aos desenvolvedores já terem levantado os principais requisitos do sistema no contato anterior com o professor, a entrevista teve uma duração curta, sendo necessária apenas para mantê-lo a par dos processos do desenvolvimento do projeto.
+
+	A entrevista foi finalizada nesse ponto.
+
