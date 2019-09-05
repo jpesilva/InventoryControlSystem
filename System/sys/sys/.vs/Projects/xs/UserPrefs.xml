@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{B4B573E0-38D6-4DB0-8EB6-078CEDB4CEB2}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DAL/Program.cs">
+    <Files>
+      <File FileName="DAL/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Projects" expanded="True">
+            <Node name="DAL" expanded="True" />
+            <Node name="UI" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.ItemProperties.BLL PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

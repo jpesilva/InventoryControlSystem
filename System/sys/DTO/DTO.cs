@@ -2,7 +2,7 @@
 
 namespace DTO
 {
-    class MainClass
+    public class Users
     {
         public static void Main(string[] args)
         {
