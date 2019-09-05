@@ -10,6 +10,27 @@
         "runtime": {
           "lib/itextsharp.dll": {}
         }
+      },
+      "DAL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "DTO": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
+      },
+      "DTO/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DTO.dll": {}
+        }
       }
     }
   },
@@ -29,10 +50,21 @@
         "lib/itextsharp.dll",
         "notice.txt"
       ]
+    },
+    "DAL/1.0.0": {
+      "type": "project",
+      "path": "../DAL.csproj",
+      "msbuildProject": "../DAL.csproj"
+    },
+    "DTO/1.0.0": {
+      "type": "project",
+      "path": "../../DTO/DTO.csproj",
+      "msbuildProject": "../../DTO/DTO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7": [
+      "DAL >= 1.0.0",
       "iTextSharp"
     ]
   },
@@ -60,7 +92,11 @@
       },
       "frameworks": {
         "net47": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/tobias/Git/InventoryControlSystem/System/sys/DAL/DAL.csproj": {
+              "projectPath": "/home/tobias/Git/InventoryControlSystem/System/sys/DAL/DAL.csproj"
+            }
+          }
         }
       }
     },

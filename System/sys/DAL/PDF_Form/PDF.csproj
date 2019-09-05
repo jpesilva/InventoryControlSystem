@@ -48,6 +48,10 @@
     <PackageReference Include="iTextSharp" Version="5.5.13.1" />
     <PackageReference Include="iTextSharp" Version="5.5.13.1" />
     <PackageReference Include="iTextSharp" Version="5.5.13.1" />
+    <PackageReference Include="iTextSharp" Version="5.5.13.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
