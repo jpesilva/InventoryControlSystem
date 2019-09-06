@@ -9,7 +9,7 @@ namespace VerificaLogin {
 	/// <summary>
 	/// Classe de verificação de Login
 	/// </summary>
-	public class login {
+	public class VerificaLogin {
 		static void	Main(String[] args) {
 			bool result, root_check;
 			string user, sen;
