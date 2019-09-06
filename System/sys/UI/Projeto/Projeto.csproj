@@ -115,5 +115,9 @@
     <Resource Include="imagens\open.png" />
     <Resource Include="imagens\search.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DAL\DAL.csproj" />
+    <ProjectReference Include="..\..\BLL\BLL.csproj" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
