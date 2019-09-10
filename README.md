@@ -8,9 +8,7 @@
 
 
 ## Linguagem
-	Todo o sistema foi implementado em linguagem C#, gerando, assim, um arquivo executável para Windows(utilizando a
-	 biblioteca Windows Forms para gerar a interface gráfica).
-	O Banco de Dados, foi implementado em MySQL.
+	O sistema será implementado em web, utilizando o framework Angular(TypeScript) para desenvolver o front-end e o framework NodeJs para desenvolver o back-end. 
 
 ## Desenvolvedores:
 	Tobias da Silva Lino
