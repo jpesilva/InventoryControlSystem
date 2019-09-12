@@ -82,7 +82,7 @@ REQUISITOS:
 		 COM RELAÇÃO A INTERFACE:
 			REQ_INTERFACE01 :: Visualização das tabelas do banco de dados;
 
-			REQ_INTERFACE02 :: Opção de abrir um arquivo (.xls e .csv serão suportados), no qual o sistema fara uma leitura dos dados na planilha e inserí-los no Banco de Dados, lidando com dados incosistentes e duplicados e gerenciando as quantidades dos 					itens, mantendo uma organização e separação de dados individuais (nota Fiscal, Fornecedor, Nº do Patrimonio, data de 					aquisição etc.). Tal planilha será armazenada em cópia dentro da pasta "tmp", por motivos de backup e evitar a perda 					de dados no arquivo original, no qual o sistema irá fazer a leitura por meio desta planilha e não da original;
+			REQ_INTERFACE02 :: Opção de abrir um arquivo (.xls e .csv serão suportados), no qual o sistema fara uma leitura dos dados na planilha e inserí-los no Banco de Dados, lidando com dados incosistentes e duplicados e gerenciando as quantidades dos itens, mantendo uma organização e separação de dados individuais (nota Fiscal, Fornecedor, Nº do Patrimonio, data de aquisição etc.). Tal planilha será armazenada em cópia dentro da pasta "tmp", por motivos de backup e evitar a perda de dados no arquivo original, no qual o sistema irá fazer a leitura por meio desta planilha e não da original;
 
 			REQ_INTERFACE03 :: O sistema não fará alterações na planilha aberta no programa, apenas no arquivo DB local;
 
