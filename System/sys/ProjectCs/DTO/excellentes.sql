@@ -8,7 +8,7 @@ create table dtoitems (
     DATE_ACQUISITION varchar(10),
 	PROVIDER varchar(255),
     VALUE varchar(255) NOT NULL,
-    DEGREE_DEPRECIATION varchar(255) NOT NULL
+    DEGREE_DEPRECIATION varchar(255) NOT NULL,
     PRIMARY KEY (ID_PATRIMONY)
 );
 
@@ -31,9 +31,8 @@ create table dtoclients (
     ADDRESS varchar(255) NOT NULL,
     NEIGHBORHOOD varchar(255) NOT NULL,
     CITY varchar(255) NOT NULL,
-    LOAN_DATE varchar(10) NOT NULL,
-    ID_PATRIMONY int(20) NOT NULL,
-    RETURN_DATE varchar(10) NOT NULL,
+    LOAN_DATE varchar(10),
+    ID_LOAN int(20),
     PRIMARY KEY (REGISTER)
 );
 
@@ -46,10 +45,12 @@ create table dtousers (
 );
 
 create table dtoloans (
+	ID_LOAN int NOT NULL AUTO_INCREMENT,
     REGISTER_CLIENT int(6) NOT NULL,
     FULL_NAME varchar(255) NOT NULL,
     ID_PATRIMONY int(20) NOT NULL,
     NAME_ITEM varchar(255) NOT NULL,
     VALUE varchar(255) NOT NULL,
-    DEGREE_DEPRECIATION varchar(255) NOT NULL
+    DEGREE_DEPRECIATION varchar(255) NOT NULL,
+    PRIMARY KEY (ID_LOAN)
 );
