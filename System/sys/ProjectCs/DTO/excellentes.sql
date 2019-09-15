@@ -1,6 +1,6 @@
 create database excellentes;
 create table dtoitems (
-    QTD int(3),
+    AMOUNT int(4) NOT NULL,
     ID_PATRIMONY int(20) NOT NULL,
     NAME_ITEM varchar(255) NOT NULL,
     LOCATION varchar(255),
@@ -9,6 +9,15 @@ create table dtoitems (
 	PROVIDER varchar(255),
     VALUE varchar(255) NOT NULL,
     DEGREE_DEPRECIATION varchar(255) NOT NULL
+    PRIMARY KEY (ID_PATRIMONY)
+);
+
+create table dtodiapers(
+	AMOUNT int(4) NOT NULL,
+	NAME_ITEM varchar(255) NOT NULL,
+	SIZE varchar(255) NOT NULL,
+	CHILD_SIZE varchar(255) NOT NULL,
+	EXPIRATION_DATE varchar(255) NOT NULL
 );
 
 create table dtoclients (
@@ -23,7 +32,7 @@ create table dtoclients (
     NEIGHBORHOOD varchar(255) NOT NULL,
     CITY varchar(255) NOT NULL,
     LOAN_DATE varchar(10) NOT NULL,
-    ID_PATRIMONY int(20),
+    ID_PATRIMONY int(20) NOT NULL,
     RETURN_DATE varchar(10) NOT NULL,
     PRIMARY KEY (REGISTER)
 );
