@@ -78,6 +78,16 @@ REQUISITOS:
 				Descrição: Funções de Adição, Remoção, Edição e Visualização flexíveis.
 				Origem: Implementação na Linguagem.
 			
+			COM RELAÇÃO AO BANCO DE DADOS:
+			REQ_DATABASE01 :: Quatro Tabelas. (Clientes, Usuários, Empréstimos, Itens)
+				Descrição: Criação de um Banco de Dados formado por quatro tabelas, que se relacionem umas com as outras
+				Entradas: Dados de Itens, Clientes, Empréstimos e Usuários
+				Origem: Dados pré-cadastrados e dados fornecidos pelo cliente
+				Saídas: Tabelas
+				
+			REQ_DATABASE02 :: Métodos de Acesso
+				Descrição: Funções de Adição, Remoção, Edição e Visualização flexíveis
+				Origem: Implementação na Linguagem
 
 		 COM RELAÇÃO A INTERFACE:
 			REQ_INTERFACE01 :: Visualização das tabelas do banco de dados;
@@ -101,6 +111,7 @@ REQUISITOS:
 
 			REQ_INTERFACE05 :: Opção de Gerar um Formulário em PDF (podendo ser impresso)
 				Descrição: Essa opção deve ser mostrada ao realizar um empréstimo e ao acessar o Banco de Dados de Empréstimos, deverá ter a opção de gerar um formulário.
+				
 			COM RELAÇÃO AS TELAS
 				REQ_TELAS01 :: Tela de Login;
 					Descrição: Tela onde o usuário fará o login e acessará o sistema.
