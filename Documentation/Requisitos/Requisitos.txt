@@ -1,4 +1,4 @@
-15-08
+﻿15-08
 
 Detalhes dos Requisitos
 	- Descrição
@@ -22,11 +22,11 @@ REQUISITOS:
 					 Valor R$, Grau de Depreciação.
 				- assinatura do responsável;
 				- dados da instituição.
-			Entrada: Os dados inseridos estarão na tabela de empréstimos, os valores serão dispostos conforme o modelo do formulário e de 					acordo com os dados inseridos no momento do empréstimo.
+			Entrada: Os dados inseridos estarão na tabela de empréstimos, os valores serão dispostos conforme o modelo do formulário e de acordo com os dados inseridos no momento do empréstimo.
 			Origem: A partir da tela de finalização de cadastro e na tabela de empréstimos.
-			Saídas:	Um arquivo PDF com todos os dados do empréstimo (data de empréstimo e devolução), dados do emprestante, dados da  					instituição e dados do item emprestado. 
+			Saídas:	Um arquivo PDF com todos os dados do empréstimo (data de empréstimo e devolução), dados do emprestante, dados da instituição e dados do item emprestado. 
 			Destino: Para caso o emprestante quiser manter um comprovante de seu empréstimo em mãos.
-			Ação:   Poderá ser solicitado logo após a finalização ou ao acessar as tabelas de empréstimos realizados, com uma opção de 					gerar formulário.
+			Ação:   Poderá ser solicitado logo após a finalização ou ao acessar as tabelas de empréstimos realizados, com uma opção de gerar formulário.
 			Requer: Solicitação do usuário, então o sistema ira criar o formulário de imediato, inserindo seus valores.
 
 		REQ_FUNC02 :: Cadastro do tipo de usuário:
@@ -42,14 +42,11 @@ REQUISITOS:
 			Entrada: ID distinta(por categoria), login e senha para acesso ao sistema.
 			Origem: Acesso a todas as telas de cadastros e planilhas.
 			Saída: Contas de usuários com login e senha em diferentes níveis de acesso.
+			
 		REQ_FUNC03 :: Arquivo de log
-			Descrição:
-			Entrada:
-			Origem:
-			Saídas:
-			Destino:
-			Ação:
-			Requer:
+			Descrição: Registros de todas as atividades do usuário
+			Origem: Ações realizadas pelos usuarios do sistema
+			Saídas: Arquivo detalhando as atividades
 
 		REQ_FUNC04 :: Níveis de acesso
 			-FUNCIONÁRIO
@@ -69,30 +66,39 @@ REQUISITOS:
 				- Banco de Dados:
 					- Cópia do arquivo .db;
 					- Arquivo principal do Banco de Dados.
-
-		- Sistema necessáriamente precisa ser Windows, devido ao uso de uma biblioteca do sistema, não funcionando no Linux.
+					
+		 COM RELAÇÃO AO BANCO DE DADOS:
+			REQ_DATABASE01 :: Cinco Tabelas. (Clientes, Usuários, Empréstimos, Itens, Fraldas)
+				Descrição: Criação de um Banco de Dados formado por cinco tabelas, que se relacionem umas com as outras
+				Entradas: Dados de Itens/Fraldas, Clientes, Empréstimos e Usuários
+				Origem: Dados pré-cadastrados e dados fornecidos pelo cliente
+				Saídas: Tabelas
+				
+			REQ_DATABASE02 :: Métodos de Acesso
+				Descrição: Funções de Adição, Remoção, Edição e Visualização flexíveis
+				Origem: Implementação na Linguagem
+			
 
 		 COM RELAÇÃO A INTERFACE:
 			REQ_INTERFACE01 :: Visualização das tabelas do banco de dados;
 
-			REQ_INTERFACE02 :: Opção de abrir um arquivo (.xls e .csv serão suportados), no qual o sistema fara uma leitura dos dados na 					planilha e inserí-los no Banco de Dados, lidando com dados incosistentes e duplicados e gerenciando as quantidades dos 					itens, mantendo uma organização e separação de dados individuais (nota Fiscal, Fornecedor, Nº do Patrimonio, data de 					aquisição etc.). Tal planilha será armazenada em cópia dentro da pasta "tmp", por motivos de backup e evitar a perda 					de dados no arquivo original, no qual o sistema irá fazer a leitura por meio desta planilha e não da original;
+			REQ_INTERFACE02 :: Opção de abrir um arquivo (.xls e .csv serão suportados), no qual o sistema fara uma leitura dos dados na planilha e inserí-los no Banco de Dados, lidando com dados incosistentes e duplicados e gerenciando as quantidades dos itens, mantendo uma organização e separação de dados individuais (nota Fiscal, Fornecedor, Nº do Patrimonio, data de aquisição etc.). Tal planilha será armazenada em cópia dentro da pasta "tmp", por motivos de backup e evitar a perda de dados no arquivo original, no qual o sistema irá fazer a leitura por meio desta planilha e não da original;
 
 			REQ_INTERFACE03 :: O sistema não fará alterações na planilha aberta no programa, apenas no arquivo DB local;
 
 			REQ_INTERFACE04 :: Opção de Salvamento, onde o sistema irá salvar os dados no Banco, mantendo a planilha aberta inalterada;
 
-			REQ_INTERFACE05 :: Opção de Gerar um Formulário em PDF (podendo ser impresso), essa opção deve ser mostrada ao realizar um 				empréstimo e ao acessar o Banco de Dados de Empréstimos, deverá ter a opção de gerar um formulário;
+			REQ_INTERFACE05 :: Opção de Gerar um Formulário em PDF (podendo ser impresso), essa opção deve ser mostrada ao realizar um empréstimo e ao acessar o Banco de Dados de Empréstimos, deverá ter a opção de gerar um formulário;
 
 		
 
 		/** Se o usuário esquecer a senha:
 		  *	- Envia a senha antiga no e-mail cadastrado.
-		  * Criptografia simples de senhas;
-		  * opção de mudar a senha;
-		  *	- coloca a senha no programa e ao confirmar, chama o md5 e então salva no banco.
+		  * 	- Opção de mudar a senha;
+		  *	- Coloca a senha no programa e ao confirmar, chama o md5 e então salva no banco.
 		*/
 
 	NÃO FUNCIONAIS
-		- Mensagens de erro devem ser escritas de forma clara, para que o usuário entenda perfeitamente onde ocorreu o erro e a possível 			solução.
+		- Mensagens de erro devem ser escritas de forma clara, para que o usuário entenda perfeitamente onde ocorreu o erro e a possível solução.
 		- Segurança: 
-			- As senhas devem ser armazenadas em formato criptografado dentro do Banco de Dados;
+			- As senhas devem ser armazenadas dentro do Banco de Dados;
