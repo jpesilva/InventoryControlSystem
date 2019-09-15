@@ -1,4 +1,4 @@
-15-08
+﻿15-08
 
 Detalhes dos Requisitos
 	- Descrição
@@ -46,9 +46,7 @@ REQUISITOS:
 		REQ_FUNC03 :: Arquivo de log
 			Descrição: Registros de todas as atividades do usuário
 			Origem: Ações realizadas pelos usuarios do sistema
-			Saídas: Arquivo detalhando as atividades 
-			Ação: Gera um arquivo para verificar as atividades realizadas por cada usuário dentro do sistema (data, horário, descrição, nome e registro de usuário, respectivamente).
-
+			Saídas: Arquivo detalhando as atividades
 
 		REQ_FUNC04 :: Níveis de acesso
 			-FUNCIONÁRIO
@@ -69,75 +67,38 @@ REQUISITOS:
 					- Cópia do arquivo .db;
 					- Arquivo principal do Banco de Dados.
 					
-		REQ_FUNC05 :: Opção de abrir um arquivo de planilha (.xls e .csv serão suportados).
-				Descrição: O sistema fara uma leitura dos dados na planilha e inserí-los no Banco de Dados, lidando com dados incosistentes e duplicados e gerenciando as quantidades dos itens, mantendo uma organização e separação de dados individuais (nota Fiscal, Fornecedor, Nº do Patrimonio, data de aquisição etc.). Tal planilha será armazenada em cópia dentro da pasta "tmp", por motivos de backup e evitar a perda de dados no arquivo original;
-				Entradas: Arquivos de planilhas com extensão xls(Excel) ou csv(separado por vírgula ou ponto e vírgula);
-				Origem: Arquivos já criados no sistema;
-				Saída: A pls
-			REQ_DATABASE02 :: Métodos de Acesso.
-				Descrição: Funções de Adição, Remoção, Edição e Visualização flexíveis.
-				Origem: Implementação na Linguagem.
-			
-			COM RELAÇÃO AO BANCO DE DADOS:
-			REQ_DATABASE01 :: Quatro Tabelas. (Clientes, Usuários, Empréstimos, Itens)
-				Descrição: Criação de um Banco de Dados formado por quatro tabelas, que se relacionem umas com as outras
-				Entradas: Dados de Itens, Clientes, Empréstimos e Usuários
+		 COM RELAÇÃO AO BANCO DE DADOS:
+			REQ_DATABASE01 :: Cinco Tabelas. (Clientes, Usuários, Empréstimos, Itens, Fraldas)
+				Descrição: Criação de um Banco de Dados formado por cinco tabelas, que se relacionem umas com as outras
+				Entradas: Dados de Itens/Fraldas, Clientes, Empréstimos e Usuários
 				Origem: Dados pré-cadastrados e dados fornecidos pelo cliente
 				Saídas: Tabelas
 				
 			REQ_DATABASE02 :: Métodos de Acesso
 				Descrição: Funções de Adição, Remoção, Edição e Visualização flexíveis
 				Origem: Implementação na Linguagem
+			
 
 		 COM RELAÇÃO A INTERFACE:
 			REQ_INTERFACE01 :: Visualização das tabelas do banco de dados;
-				Descrição: O sistema deve mostrar as tabelas geradas pelo Banco, sendo atualizadas conforme o usuário a modifica.
-				Entradas: O usuário deverá abrir a aba da tabela desejada. O sistema deverá mostrar todos os dados da tabela dentro do Banco de Dados.
-				Origem: Dados da tabela desejada, dentro do Banco.
-				Saída: Visualização da tabela completa.
-				Requer: Acionamento de um botão para abrir a aba da tabela.
-			
-			REQ_INTERFACE02 :: Opção de abrir planilha;
-				Descrição: O usuário de ter o botão para abrir um arquivo de plailha para ser editado no sistema.
-				Entradas: O usuário irá abrir a tabela desejada, que ficará salva com uma cópia.
-				Origem: Deverá ter no próprio computador.
-				Saídas: Planilha atualizada.
 
+			REQ_INTERFACE02 :: Opção de abrir um arquivo (.xls e .csv serão suportados), no qual o sistema fara uma leitura dos dados na planilha e inserí-los no Banco de Dados, lidando com dados incosistentes e duplicados e gerenciando as quantidades dos itens, mantendo uma organização e separação de dados individuais (nota Fiscal, Fornecedor, Nº do Patrimonio, data de aquisição etc.). Tal planilha será armazenada em cópia dentro da pasta "tmp", por motivos de backup e evitar a perda de dados no arquivo original, no qual o sistema irá fazer a leitura por meio desta planilha e não da original;
 
-			REQ_INTERFACE03 :: Opção de Salvamento, onde o sistema irá salvar os dados no Banco, mantendo a planilha aberta inalterada;
-				Descrição: Para que as alterações dentro da planilha sejam efetivadas, o usuário precisa acionar o botão salvar.
-				Destino: O sistema irá atualizar as planilhas abertas.
+			REQ_INTERFACE03 :: O sistema não fará alterações na planilha aberta no programa, apenas no arquivo DB local;
 
+			REQ_INTERFACE04 :: Opção de Salvamento, onde o sistema irá salvar os dados no Banco, mantendo a planilha aberta inalterada;
 
-			REQ_INTERFACE05 :: Opção de Gerar um Formulário em PDF (podendo ser impresso)
-				Descrição: Essa opção deve ser mostrada ao realizar um empréstimo e ao acessar o Banco de Dados de Empréstimos, deverá ter a opção de gerar um formulário.
-				
-			COM RELAÇÃO AS TELAS
-				REQ_TELAS01 :: Tela de Login;
-					Descrição: Tela onde o usuário fará o login e acessará o sistema.
-					Entradas: Nome de usuário e senha.
-					Origem: Ficará salvo no Banco de Dados de Usuário.
-					Saídas: O sistema irá salvar a atividade no arquivo de log e o usuário poderá acessar o sistema.
-					Destino: Necessário para poder acessar o sistema.
-					Requer: O usuário precisa estar cadastrado no sistema e suas informações devem bater com as que o usuário está inserindo.
-				
-				REQ_TELAS02 :: Tela Inicial, Home;
-					Descrição: Tela onde o usuário fará todas as ações, visualizar planilhas, abrir outras página etc.
-					Requer: O usuário precisa estar logado no sistema para acessá-la.
+			REQ_INTERFACE05 :: Opção de Gerar um Formulário em PDF (podendo ser impresso), essa opção deve ser mostrada ao realizar um empréstimo e ao acessar o Banco de Dados de Empréstimos, deverá ter a opção de gerar um formulário;
 
-				REQ_TELAS03 :: Tela de Cadastros;
-					Descrição: Tela onde o usuário fará o cadastro de itens, clientes ou empréstimos. Terá opções de qual tipo de dado inserir, assim o sistema mostrará os campos necessários.
-					Entradas: Informações a serem inseridas nos campos.
-					Saídas: Os dados serão inseridos dentro do Banco de Dados.
-					Requer: O usuário precisa estar logado.
+		
 
+		/** Se o usuário esquecer a senha:
+		  *	- Envia a senha antiga no e-mail cadastrado.
+		  * 	- Opção de mudar a senha;
+		  *	- Coloca a senha no programa e ao confirmar, chama o md5 e então salva no banco.
+		*/
 
 	NÃO FUNCIONAIS
 		- Mensagens de erro devem ser escritas de forma clara, para que o usuário entenda perfeitamente onde ocorreu o erro e a possível solução.
 		- Segurança: 
-			- As senhas devem ser armazenadas em formato criptografado dentro do Banco de Dados;
-		- Telas devem ser limpas e claras, para facilitar o uso.
-
-
-
-
+			- As senhas devem ser armazenadas dentro do Banco de Dados;
